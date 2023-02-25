@@ -27,16 +27,14 @@ const inputEl = btnCreateEl.previousElementSibling;
 
 const boxesEl = document.querySelector('#boxes');
 
-let amount = 0;
+btnCreateEl.addEventListener('click', handleBtnCreate);
 
-inputEl.addEventListener('blur', () => {
-  amount = inputEl.value;
-  console.log(amount);
-  return amount
-})
+btnDestroyEl.addEventListener('click', destroyBoxes);
 
-// btnCreateEl.addEventListener('click', handleBtnCreate);
-
+function handleBtnCreate() {
+  const quanity = inputEl.value;
+  createBoxes(quanity);
+}
 
 function createBoxes(amount) {
   const basicSize = 30;
@@ -55,4 +53,4 @@ function destroyBoxes() {
   boxesEl.textContent = '';
 }
 
-createBoxes(6);
+// createBoxes(6);
