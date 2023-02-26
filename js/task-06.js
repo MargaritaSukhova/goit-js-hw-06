@@ -6,12 +6,12 @@
 
 const inputEl = document.querySelector('#validation-input');
 
-inputEl.addEventListener('blur', () => {
-  if (inputEl.value.trim().length === Number(inputEl.getAttribute('data-length'))) {
-    inputEl.classList.add('valid');
-    inputEl.classList.remove('invalid');
+inputEl.addEventListener('blur', (event) => {
+  if (event.target.value.trim().length === Number(event.target.getAttribute('data-length'))) {
+    event.target.classList.add('valid');
+    event.target.classList.remove('invalid');
   } else {
-    inputEl.classList.add('invalid');
+    event.target.classList.add('invalid');
   }
 });
 

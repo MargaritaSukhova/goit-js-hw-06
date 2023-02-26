@@ -11,7 +11,7 @@ function getRandomHexColor() {
 
 const btnEl = document.querySelector('.change-color');
 
-const hexTextEl = btnEl.previousElementSibling.firstElementChild;
+const hexTextEl = document.querySelector('.color');
 
 const bodyEl = document.querySelector('.widget').parentNode;
 

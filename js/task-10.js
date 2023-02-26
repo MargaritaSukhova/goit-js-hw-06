@@ -52,5 +52,3 @@ function createBoxes(amount) {
 function destroyBoxes() {
   boxesEl.textContent = '';
 }
-
-// createBoxes(6);

@@ -12,8 +12,6 @@
 
 const formEl = document.querySelector('.login-form');
 
-console.log(formEl.elements);
-
 formEl.addEventListener('submit', handleFormSubmit);
 
 function handleFormSubmit(event) {
