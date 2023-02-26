@@ -11,7 +11,7 @@ console.log(`Number of categories: ${itemsEl.length}`);
 
 itemsEl.forEach(item => {
   console.log(`Category: ${item.firstElementChild.textContent}`);
-  console.log(`Elements: ${item.firstElementChild.nextElementSibling.children.length}`);
+  console.log(`Elements: ${item.lastElementChild.children.length}`);
 })
 
 

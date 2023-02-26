@@ -14,11 +14,9 @@ const incrementEl = document.querySelector('button[data-action="increment"]');
 decrementEl.addEventListener('click', () => {
   counterValue -= 1;
   valueEl.textContent = counterValue;
-  return
 });
 
 incrementEl.addEventListener('click', () => {
   counterValue += 1;
   valueEl.textContent = counterValue;
-  return
 });
